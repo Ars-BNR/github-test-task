@@ -1,0 +1,34 @@
+.Pagination {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  gap: 10px;
+}
+.Pagination__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Pagination__left,
+.Pagination__right {
+  cursor: pointer;
+}
+.select {
+  width: 70px;
+  max-height: 24px;
+  border: none;
+
+  .MuiSelect-root {
+    border: none; // Убираем border
+    outline: none; // Убираем outline
+    &:before,
+    &:after {
+      border-bottom: none; // Убираем нижние границы
+    }
+    &:hover:not(.Mui-disabled):before {
+      border-bottom: none; // Убираем нижние границы при наведении
+    }
+  }
+}

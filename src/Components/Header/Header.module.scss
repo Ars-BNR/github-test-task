@@ -1,0 +1,50 @@
+.Header {
+  padding: 19px 15px 19px 15px;
+  background: rgba(0, 131, 143, 1);
+}
+.Header__block {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  padding: 0px 15px;
+  margin: 0 auto;
+  max-width: 1470px;
+}
+.Header {
+  &__block {
+    .MuiInput-root {
+      background: rgba(242, 242, 242, 1);
+      background-color: white;
+      border-radius: 4px;
+      padding: 9px 16px 9px 16px;
+      max-width: 912px;
+      flex-grow: 1;
+      max-height: 42px;
+      border: none;
+      outline: none;
+
+      &:hover:not(.Mui-disabled):before {
+        border-bottom: none;
+      }
+
+      &:before,
+      &:after {
+        border-bottom: none;
+      }
+
+      &:focus-within {
+        &:before,
+        &:after {
+          border-bottom: none;
+        }
+      }
+    }
+
+    .MuiButton-root {
+      flex-grow: 1;
+      max-width: 105px;
+      max-height: 42px;
+      padding: 8px 22px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+}
+
+.main__container {
+  display: flex;
+  // justify-content: center;
+  margin: 0 auto;
+  // padding: 0px 15px;
+  // max-width: 1470px;
+  max-width: 100%;
+  width: 100%;
+  flex-grow: 1;
+}
